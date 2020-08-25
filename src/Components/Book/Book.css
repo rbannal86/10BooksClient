@@ -1,0 +1,156 @@
+.book_information {
+  display: flex;
+  flex-direction: row;
+  border-right: black solid 1px;
+  border-left: black solid 1px;
+  border-top: black solid 1px;
+  padding-top: 3%;
+  min-height: 50vw;
+  position: relative;
+}
+
+.book_text_information {
+  flex-direction: column;
+  padding: 2%;
+  width: 100%;
+}
+
+.book_image {
+  object-fit: contain;
+  object-position: top;
+}
+
+.book_title {
+  margin-top: 0;
+  margin-bottom: 3%;
+}
+
+.book_subtitle {
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.book_authors {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 0.8rem;
+}
+
+.book_buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.book_buttons_container > button {
+  font-size: 0.7rem;
+  word-wrap: inherit;
+  border: 1px solid black;
+  background-color: #c6dbf0;
+  margin-bottom: 2%;
+  width: 100%;
+  height: 20%;
+}
+
+.book_preview_link {
+  font-size: 0.7rem;
+}
+
+.book_buttons_container > button:active {
+  background-color: #e03616;
+}
+
+.book_preview_link {
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.book_preview_link:visited {
+  color: black;
+}
+
+@media only screen and (min-width: 750px) {
+  .book_information {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0;
+    padding-bottom: 20%;
+  }
+
+  .book_text_information {
+    justify-content: flex-start;
+  }
+
+  .book_title {
+    font-size: 3rem;
+  }
+
+  .book_subtitle {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  .book_authors {
+    padding-top: 0;
+    font-size: 2rem;
+  }
+
+  .book_buttons_container {
+    height: 50%;
+  }
+
+  .book_buttons_container > button {
+    font-size: 1.5rem;
+    height: 10vw;
+  }
+
+  .book_preview_link {
+    font-size: 1.5rem;
+  }
+
+  .book_image {
+    margin-top: 3%;
+    margin-right: 3%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .book_information {
+    flex-direction: column;
+    border: none;
+  }
+
+  .book_title {
+    font-size: 1.5rem;
+  }
+
+  .book_subtitle {
+    font-size: 1rem;
+  }
+
+  .book_authors {
+    font-size: 1.5rem;
+  }
+
+  .book_image {
+    margin-top: 3%;
+    float: none;
+  }
+
+  .book_text_information {
+    width: 100%;
+  }
+
+  .book_buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .book_buttons_container > button {
+    width: 100%;
+    height: auto;
+  }
+}

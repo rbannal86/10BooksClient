@@ -1,0 +1,15 @@
+.ai_information {
+  margin-right: 3%;
+  padding-top: 3%;
+}
+
+@media only screen and (min-width: 750px) {
+  .ai_top_level {
+    font-size: 1.5rem;
+    padding-top: 5%;
+  }
+
+  .ai_information > div {
+    padding-top: 3%;
+  }
+}

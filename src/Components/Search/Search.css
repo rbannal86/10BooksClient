@@ -1,0 +1,51 @@
+.search_error {
+  text-align: center;
+  font-weight: bolder;
+  color: red;
+}
+
+.search_label {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.search_input {
+  width: 94vw;
+  height: 15vw;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.3rem;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  border: black solid 2px;
+  padding: 1%;
+  background-color: #fff689;
+}
+
+.search_button_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.search_button {
+  border: black solid 2px;
+  background-color: #5998c5;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  width: 40vw;
+}
+
+@media only screen and (min-width: 750px) {
+  .search_error {
+    font-size: 2rem;
+  }
+
+  .search_input {
+    height: 10vw;
+    font-size: 2.5rem;
+  }
+
+  .search_button {
+    font-size: 2rem;
+  }
+}
